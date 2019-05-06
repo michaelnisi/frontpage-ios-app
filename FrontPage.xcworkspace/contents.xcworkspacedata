@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FrontPage.xcodeproj">
+      location = "group:deps/apollo-ios/Apollo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:FrontPage.xcodeproj">
    </FileRef>
 </Workspace>

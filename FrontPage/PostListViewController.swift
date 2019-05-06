@@ -2,7 +2,7 @@ import UIKit
 import Apollo
 
 class PostListViewController: UITableViewController {
-  var posts: [AllPostsQuery.Data.Post]? {
+  var posts: [AllPostsQuery.Data.Post?]? {
     didSet {
       tableView.reloadData()
     }
@@ -13,7 +13,7 @@ class PostListViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 64
   }
 

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		618A0697D2E17B2DB176DE7D /* Pods_FrontPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79834A5F2BAB609552638617 /* Pods_FrontPage.framework */; };
-		9F12A39120AC5A310097DC1B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12A38C20AC5A300097DC1B /* API.swift */; };
+		4CB355A0227FFF8700DE23FF /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3559F227FFF8700DE23FF /* Apollo.framework */; };
+		4CB355A4228004F100DE23FF /* Types.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB355A1228004F100DE23FF /* Types.graphql.swift */; };
+		4CB355A5228004F100DE23FF /* PostTableViewCell.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB355A2228004F100DE23FF /* PostTableViewCell.graphql.swift */; };
+		4CB355A6228004F100DE23FF /* PostListViewController.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB355A3228004F100DE23FF /* PostListViewController.graphql.swift */; };
 		9F12A39220AC5A310097DC1B /* PostTableViewCell.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9F12A38D20AC5A300097DC1B /* PostTableViewCell.graphql */; };
 		9F12A39320AC5A310097DC1B /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12A38E20AC5A300097DC1B /* PostListViewController.swift */; };
 		9F12A39420AC5A310097DC1B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12A38F20AC5A300097DC1B /* PostTableViewCell.swift */; };
@@ -33,10 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		530175793A47602FFA35560B /* Pods-FrontPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPage/Pods-FrontPage.release.xcconfig"; sourceTree = "<group>"; };
-		6972FD3A127F23953FA4CF6E /* Pods-FrontPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPage/Pods-FrontPage.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB3559F227FFF8700DE23FF /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB355A1228004F100DE23FF /* Types.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.graphql.swift; sourceTree = "<group>"; };
+		4CB355A2228004F100DE23FF /* PostTableViewCell.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.graphql.swift; sourceTree = "<group>"; };
+		4CB355A3228004F100DE23FF /* PostListViewController.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewController.graphql.swift; sourceTree = "<group>"; };
 		79834A5F2BAB609552638617 /* Pods_FrontPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F12A38C20AC5A300097DC1B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9F12A38D20AC5A300097DC1B /* PostTableViewCell.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PostTableViewCell.graphql; sourceTree = "<group>"; };
 		9F12A38E20AC5A300097DC1B /* PostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		9F12A38F20AC5A300097DC1B /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -54,28 +57,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618A0697D2E17B2DB176DE7D /* Pods_FrontPage.framework in Frameworks */,
+				4CB355A0227FFF8700DE23FF /* Apollo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C7C4B6BBAB93599EB5D3699 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6972FD3A127F23953FA4CF6E /* Pods-FrontPage.debug.xcconfig */,
-				530175793A47602FFA35560B /* Pods-FrontPage.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		9F5B106820AC57D100BAE436 = {
 			isa = PBXGroup;
 			children = (
 				9F5B107320AC57D100BAE436 /* FrontPage */,
 				9F5B107220AC57D100BAE436 /* Products */,
-				5C7C4B6BBAB93599EB5D3699 /* Pods */,
 				A18FDB17A98B853AA7E2EE1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +84,10 @@
 		9F5B107320AC57D100BAE436 /* FrontPage */ = {
 			isa = PBXGroup;
 			children = (
+				4CB355A3228004F100DE23FF /* PostListViewController.graphql.swift */,
+				4CB355A2228004F100DE23FF /* PostTableViewCell.graphql.swift */,
+				4CB355A1228004F100DE23FF /* Types.graphql.swift */,
 				9F5B107420AC57D100BAE436 /* AppDelegate.swift */,
-				9F12A38C20AC5A300097DC1B /* API.swift */,
 				9F12A39020AC5A310097DC1B /* PostListViewController.graphql */,
 				9F12A38E20AC5A300097DC1B /* PostListViewController.swift */,
 				9F12A38D20AC5A300097DC1B /* PostTableViewCell.graphql */,
@@ -108,6 +103,7 @@
 		A18FDB17A98B853AA7E2EE1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CB3559F227FFF8700DE23FF /* Apollo.framework */,
 				79834A5F2BAB609552638617 /* Pods_FrontPage.framework */,
 			);
 			name = Frameworks;
@@ -120,13 +116,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F5B108320AC57D200BAE436 /* Build configuration list for PBXNativeTarget "FrontPage" */;
 			buildPhases = (
-				85C9A6C97FF886F1EAE894BF /* [CP] Check Pods Manifest.lock */,
-				9F12A3B620AC5B7E0097DC1B /* Generate Apollo GraphQL API */,
 				9F5B106D20AC57D100BAE436 /* Sources */,
 				9F5B106E20AC57D100BAE436 /* Frameworks */,
 				9F5B106F20AC57D100BAE436 /* Resources */,
 				9F12A3B520AC5ACB0097DC1B /* Embed Frameworks */,
-				3D99F8228785282A1959B384 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +142,7 @@
 				TargetAttributes = {
 					9F5B107020AC57D100BAE436 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -185,68 +179,17 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3D99F8228785282A1959B384 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FrontPage/Pods-FrontPage-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontPage/Pods-FrontPage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85C9A6C97FF886F1EAE894BF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FrontPage-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F12A3B620AC5B7E0097DC1B /* Generate Apollo GraphQL API */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate Apollo GraphQL API";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		9F5B106D20AC57D100BAE436 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F12A39120AC5A310097DC1B /* API.swift in Sources */,
+				4CB355A4228004F100DE23FF /* Types.graphql.swift in Sources */,
 				9F12A39320AC5A310097DC1B /* PostListViewController.swift in Sources */,
 				9F5B107520AC57D100BAE436 /* AppDelegate.swift in Sources */,
+				4CB355A6228004F100DE23FF /* PostListViewController.graphql.swift in Sources */,
 				9F12A39420AC5A310097DC1B /* PostTableViewCell.swift in Sources */,
+				4CB355A5228004F100DE23FF /* PostTableViewCell.graphql.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +331,6 @@
 		};
 		9F5B108420AC57D200BAE436 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6972FD3A127F23953FA4CF6E /* Pods-FrontPage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -399,14 +341,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apollographql.examples.FrontPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9F5B108520AC57D200BAE436 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 530175793A47602FFA35560B /* Pods-FrontPage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -417,7 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apollographql.examples.FrontPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
